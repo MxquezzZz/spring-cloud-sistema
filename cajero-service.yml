@@ -1,3 +1,13 @@
 server:
   port: ${PORT:8062}
 message: Configuracion de Cajero en el servidor levantado!
+spring:
+  datasource:
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    url: jdbc:mysql://localhost:3306/cloudmicroservices?serverTimezone=UTC
+    username: root
+    password: 123456789
+  jpa:
+    hibernate:
+      ddl-auto: update
+      database-platform: org.hibernate.dialect.MySQLDialect
